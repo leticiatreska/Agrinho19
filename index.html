@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho | Sustentabilidade e Meio Ambiente</title>
+  <meta name="description" content="Site educativo sobre o Agrinho: sustentabilidade, meio ambiente e preservação da natureza.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a href="#topo" class="logo">
+        <span class="logo-icon">🌱</span>
+        <span class="logo-text">AGRINHO</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#topo" class="nav-link active" data-section="topo">Início</a></li>
+        <li><a href="#sobre" class="nav-link" data-section="sobre">Sobre</a></li>
+        <li><a href="#sustentabilidade" class="nav-link" data-section="sustentabilidade">Sustentabilidade</a></li>
+        <li><a href="#flashcards" class="nav-link" data-section="flashcards">Flashcards</a></li>
+        <li><a href="#contato" class="nav-link" data-section="contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="topo">
+      <div class="hero-overlay"></div>
+      <img src="assets/banner.jpg" alt="Paisagem natural representando sustentabilidade" class="hero-bg" loading="eager">
+
+      <div class="hero-content fade-in">
+        <p class="hero-tag">🌍 Projeto Agrinho</p>
+        <h1 class="hero-title">Cultivando um futuro <span>sustentável</span></h1>
+        <p class="hero-subtitle">
+          Educação ambiental, consumo consciente e preservação dos recursos naturais
+          para construirmos juntos um mundo melhor.
+        </p>
+        <a href="#sobre" class="btn btn-primary">Explorar</a>
+      </div>
+
+      <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===================== ESTATÍSTICAS ===================== -->
+    <section class="stats">
+      <div class="stats-container">
+        <div class="stat-item">
+          <span class="stat-number" data-target="83">0</span>
+          <span class="stat-suffix">%</span>
+          <p>do lixo reciclável não é reciclado no Brasil</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="60">0</span>
+          <span class="stat-suffix">L</span>
+          <p>de água podem ser gastos em um banho de 15 min</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="7">0</span>
+          <span class="stat-suffix"> mi</span>
+          <p>de km² é a área da Floresta Amazônica</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="100">0</span>
+          <span class="stat-suffix">%</span>
+          <p>renovável pode ser nossa matriz energética</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="sobre" id="sobre">
+      <div class="section-header fade-in">
+        <span class="section-tag">Sobre o projeto</span>
+        <h2 class="section-title">O que é o Agrinho?</h2>
+      </div>
+
+      <div class="sobre-content">
+        <div class="sobre-text fade-in">
+          <p>
+            O <strong>Agrinho</strong> é um programa socioeducativo que leva conhecimento
+            sobre meio ambiente, agricultura e cidadania para estudantes de todo o Brasil.
+            Seu objetivo é despertar a consciência ambiental desde cedo, formando cidadãos
+            mais responsáveis com o planeta.
+          </p>
+          <p>
+            Através da <strong>educação ambiental</strong>, aprendemos a importância de
+            cuidar da natureza, entender de onde vêm os alimentos e como nossas atitudes
+            diárias impactam o meio ambiente.
+          </p>
+
+          <div class="sobre-grid">
+            <div class="sobre-card">
+              <span class="sobre-icon">♻️</span>
+              <h3>Sustentabilidade</h3>
+              <p>Equilíbrio entre desenvolvimento e preservação dos recursos naturais.</p>
+            </div>
+            <div class="sobre-card">
+              <span class="sobre-icon">🛒</span>
+              <h3>Consumo Consciente</h3>
+              <p>Consumir de forma responsável, evitando desperdícios.</p>
+            </div>
+            <div class="sobre-card">
+              <span class="sobre-icon">🌳</span>
+              <h3>Preservação</h3>
+              <p>Proteger florestas, rios e a biodiversidade para as próximas gerações.</p>
+            </div>
+            <div class="sobre-card">
+              <span class="sobre-icon">📚</span>
+              <h3>Educação</h3>
+              <p>Conhecimento como ferramenta de transformação ambiental.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-image fade-in">
+          <img src="assets/natureza.jpg" alt="Natureza preservada com floresta e rio" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALERIA ===================== -->
+    <section class="galeria" id="galeria">
+      <div class="section-header fade-in">
+        <span class="section-tag">Galeria</span>
+        <h2 class="section-title">Nosso planeta em imagens</h2>
+      </div>
+
+      <div class="galeria-grid">
+        <figure class="galeria-item fade-in">
+          <img src="assets/floresta.jpg" alt="Floresta densa e preservada" loading="lazy">
+          <figcaption>Florestas</figcaption>
+        </figure>
+        <figure class="galeria-item fade-in">
+          <img src="assets/agua.jpg" alt="Rio de água limpa e cristalina" loading="lazy">
+          <figcaption>Água</figcaption>
+        </figure>
+        <figure class="galeria-item fade-in">
+          <img src="assets/reciclagem.jpg" alt="Materiais separados para reciclagem" loading="lazy">
+          <figcaption>Reciclagem</figcaption>
+        </figure>
+        <figure class="galeria-item fade-in">
+          <img src="assets/solo.jpg" alt="Solo fértil para plantio" loading="lazy">
+          <figcaption>Solo</figcaption>
+        </figure>
+        <figure class="galeria-item fade-in">
+          <img src="assets/energia.jpg" alt="Painéis solares e energia limpa" loading="lazy">
+          <figcaption>Energia Limpa</figcaption>
+        </figure>
+        <figure class="galeria-item fade-in">
+          <img src="assets/agricultura.jpg" alt="Plantação sustentável" loading="lazy">
+          <figcaption>Agricultura</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== SUSTENTABILIDADE ===================== -->
+    <section class="sustentabilidade" id="sustentabilidade">
+      <div class="section-header fade-in">
+        <span class="section-tag">Pilares</span>
+        <h2 class="section-title">Caminhos para a Sustentabilidade</h2>
+        <p class="section-desc">
+          Pequenas atitudes, quando somadas, geram grandes transformações para o meio ambiente.
+        </p>
+      </div>
+
+      <div class="sustentabilidade-grid">
+        <div class="sust-card fade-in">
+          <div class="sust-icon">♻️</div>
+          <h3>Reciclagem</h3>
+          <p>Transformar resíduos em novos produtos, reduzindo a extração de recursos naturais e o volume de lixo nos aterros.</p>
+        </div>
+
+        <div class="sust-card fade-in">
+          <div class="sust-icon">🌳</div>
+          <h3>Reflorestamento</h3>
+          <p>Recuperar áreas degradadas plantando árvores nativas, restaurando ecossistemas e protegendo nascentes.</p>
+        </div>
+
+        <div class="sust-card fade-in">
+          <div class="sust-icon">💧</div>
+          <h3>Economia de Água</h3>
+          <p>Reduzir o desperdício de água em casa, na escola e na indústria, garantindo o recurso para o futuro.</p>
+        </div>
+
+        <div class="sust-card fade-in">
+          <div class="sust-icon">⚡</div>
+          <h3>Energia Limpa</h3>
+          <p>Investir em fontes renováveis como solar e eólica, reduzindo a emissão de gases poluentes.</p>
+        </div>
+
+        <div class="sust-card fade-in">
+          <div class="sust-icon">🌾</div>
+          <h3>Agricultura Sustentável</h3>
+          <p>Produzir alimentos respeitando o solo, a água e a biodiversidade, sem agredir o meio ambiente.</p>
+        </div>
+
+        <div class="sust-card fade-in">
+          <div class="sust-icon">🦋</div>
+          <h3>Biodiversidade</h3>
+          <p>Preservar a diversidade de espécies animais e vegetais, essencial para o equilíbrio dos ecossistemas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FLASHCARDS ===================== -->
+    <section class="flashcards-section" id="flashcards">
+      <div class="section-header fade-in">
+        <span class="section-tag">Aprenda brincando</span>
+        <h2 class="section-title">Flashcards Ambientais</h2>
+        <p class="section-desc">Clique nos cartões para descobrir o verso!</p>
+      </div>
+
+      <div class="flashcards-grid">
+
+        <div class="flashcard fade-in" tabindex="0">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <span class="card-icon">♻️</span>
+              <h3>Reciclagem</h3>
+              <span class="card-hint">Clique para virar</span>
+            </div>
+            <div class="flashcard-back">
+              <p>Processo de transformar materiais usados, como papel, vidro, plástico e metal, em novos produtos, reduzindo o lixo e economizando recursos naturais.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard fade-in" tabindex="0">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <span class="card-icon">🗑️</span>
+              <h3>Coleta Seletiva</h3>
+              <span class="card-hint">Clique para virar</span>
+            </div>
+            <div class="flashcard-back">
+              <p>Separação do lixo conforme seu tipo (papel, plástico, vidro, metal e orgânico) facilitando o processo de reciclagem e reduzindo a poluição.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard fade-in" tabindex="0">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <span class="card-icon">🪱</span>
+              <h3>Compostagem</h3>
+              <span class="card-hint">Clique para virar</span>
+            </div>
+            <div class="flashcard-back">
+              <p>Técnica que transforma restos orgânicos, como cascas e folhas, em adubo natural rico em nutrientes para o solo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard fade-in" tabindex="0">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <span class="card-icon">⚡</span>
+              <h3>Energias Renováveis</h3>
+              <span class="card-hint">Clique para virar</span>
+            </div>
+            <div class="flashcard-back">
+              <p>Fontes de energia que não se esgotam, como solar, eólica e hidrelétrica, causando menor impacto ambiental que combustíveis fósseis.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard fade-in" tabindex="0">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <span class="card-icon">💧</span>
+              <h3>Preservação da Água</h3>
+              <span class="card-hint">Clique para virar</span>
+            </div>
+            <div class="flashcard-back">
+              <p>Conjunto de práticas para evitar o desperdício e a poluição da água, garantindo o acesso ao recurso para as próximas gerações.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard fade-in" tabindex="0">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <span class="card-icon">🌾</span>
+              <h3>Agricultura Sustentável</h3>
+              <span class="card-hint">Clique para virar</span>
+            </div>
+            <div class="flashcard-back">
+              <p>Modelo de produção agrícola que respeita o meio ambiente, utilizando técnicas que preservam o solo e a água a longo prazo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard fade-in" tabindex="0">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <span class="card-icon">🦋</span>
+              <h3>Biodiversidade</h3>
+              <span class="card-hint">Clique para virar</span>
+            </div>
+            <div class="flashcard-back">
+              <p>Variedade de seres vivos existentes em um ecossistema, fundamental para o equilíbrio da natureza e a sobrevivência das espécies.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard fade-in" tabindex="0">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <span class="card-icon">🪓</span>
+              <h3>Desmatamento</h3>
+              <span class="card-hint">Clique para virar</span>
+            </div>
+            <div class="flashcard-back">
+              <p>Remoção da vegetação natural de uma área, geralmente para uso agrícola ou urbano, causando perda de biodiversidade e mudanças no clima.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard fade-in" tabindex="0">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <span class="card-icon">🌡️</span>
+              <h3>Mudanças Climáticas</h3>
+              <span class="card-hint">Clique para virar</span>
+            </div>
+            <div class="flashcard-back">
+              <p>Alterações de longo prazo nos padrões climáticos da Terra, intensificadas pela ação humana, como o aumento da emissão de gases poluentes.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CURIOSIDADES ===================== -->
+    <section class="curiosidades" id="curiosidades">
+      <div class="section-header fade-in">
+        <span class="section-tag">Você sabia?</span>
+        <h2 class="section-title">Curiosidades Ambientais</h2>
+      </div>
+
+      <div class="curiosidades-grid">
+        <div class="curiosidade-card fade-in">
+          <span class="curiosidade-icon">🌳</span>
+          <p>Uma única árvore adulta pode absorver até <strong>22 kg de CO₂</strong> por ano.</p>
+        </div>
+        <div class="curiosidade-card fade-in">
+          <span class="curiosidade-icon">🥫</span>
+          <p>Uma lata de alumínio reciclada economiza energia suficiente para manter uma TV ligada por <strong>3 horas</strong>.</p>
+        </div>
+        <div class="curiosidade-card fade-in">
+          <span class="curiosidade-icon">🚿</span>
+          <p>Fechar a torneira ao escovar os dentes pode economizar até <strong>12 litros</strong> de água por minuto.</p>
+        </div>
+        <div class="curiosidade-card fade-in">
+          <span class="curiosidade-icon">🐝</span>
+          <p>As abelhas são responsáveis pela polinização de cerca de <strong>1/3</strong> dos alimentos que consumimos.</p>
+        </div>
+        <div class="curiosidade-card fade-in">
+          <span class="curiosidade-icon">🛍️</span>
+          <p>Uma sacola plástica pode levar até <strong>100 anos</strong> para se decompor na natureza.</p>
+        </div>
+        <div class="curiosidade-card fade-in">
+          <span class="curiosidade-icon">☀️</span>
+          <p>A energia solar que chega à Terra em <strong>1 hora</strong> poderia suprir o consumo mundial de um ano inteiro.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="contato" id="contato">
+      <div class="section-header fade-in">
+        <span class="section-tag">Fale conosco</span>
+        <h2 class="section-title">Contato</h2>
+        <p class="section-desc">Tem dúvidas ou sugestões sobre o projeto Agrinho? Envie uma mensagem!</p>
+      </div>
+
+      <form class="contato-form fade-in" id="contatoForm" novalidate>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+          <span class="form-error" id="erroNome"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+          <span class="form-error" id="erroEmail"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+          <span class="form-error" id="erroMensagem"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        <p class="form-success" id="formSuccess">Mensagem enviada com sucesso! 🌿</p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">🌱</span>
+        <span class="logo-text">AGRINHO</span>
+        <p>Educação ambiental para um futuro sustentável.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <a href="#topo">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#sustentabilidade">Sustentabilidade</a>
+        <a href="#flashcards">Flashcards</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div class="footer-info">
+        <h4>Sobre o projeto</h4>
+        <p>Projeto desenvolvido com o tema <strong>Agrinho</strong>, voltado à conscientização ambiental e sustentabilidade.</p>
+        <p>Tecnologias: HTML5, CSS3 e JavaScript puro.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="ano"></span> Agrinho — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao topo -->
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
